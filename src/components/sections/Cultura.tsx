@@ -4,10 +4,12 @@ import { motion } from "framer-motion";
 import { FadeIn } from "../animations/FadeIn";
 
 const expresiones = [
-  { label: "Tambor", desc: "El latido del territorio, la comunicación ancestral." },
-  { label: "Danza", desc: "El cuerpo como territorio de libertad y memoria." },
-  { label: "Voz", desc: "Cantos de bullerengue que narran la historia no escrita." },
-  { label: "Liderazgo", desc: "La mujer como tejedora de la vida comunitaria." },
+  { label: "Medicina Ancestral", desc: "Saberes botánicos y sanación espiritual guiada por parteras y rezanderos." },
+  { label: "Agricultura y Agua", desc: "Cultivos de pancoger y la fuerte relación comunitaria con el arroyo local." },
+  { label: "Fogón Comunitario", desc: "Sancocho a la leña, dulces y fritos como actos de cohesión y resistencia." },
+  { label: "Tradición Oral", desc: "Transmisión de historias y normas guiadas por el respeto a los Mayores." },
+  { label: "Fiesta y Resistencia", desc: "El toque del tambor y festividades como Ángeles Somos en noviembre." },
+  { label: "Coexistencia Étnica", desc: "Vecindad e intercambio cultural armónico con el Cabildo Indígena Zenú." },
 ];
 
 export function Cultura() {

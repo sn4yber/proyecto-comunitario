@@ -70,7 +70,7 @@ export function Historia() {
             Membrillal es una vereda rural del corregimiento de Pasacaballos, en Cartagena de Indias.
           </p>
           <p className="font-sans font-light text-sm text-makeba-black/50 leading-relaxed">
-            Aquí habita una comunidad afrodescendiente autónoma que defiende su territorio ancestral frente al avance del corredor industrial de Mamonal.
+            Aquí habita una comunidad afrodescendiente de vocación agrícola, organizada en Asamblea General, que defiende su territorio colectivo frente al avance de la Zona Industrial de Mamonal.
           </p>
         </div>
 
@@ -119,10 +119,13 @@ export function Historia() {
           <div className="w-1/2 pt-8">
             <FadeIn direction="up" delay={0.3}>
               <p className="text-xl font-light text-makeba-black/70 leading-relaxed mb-6 font-serif italic">
-                Membrillal es una vereda rural del corregimiento de Pasacaballos, en Cartagena de Indias. Aquí habita una comunidad afrodescendiente autónoma que defiende su territorio ancestral.
+                Membrillal es una vereda del corregimiento de Pasacaballos. Aquí habita una comunidad afrodescendiente de vocación agrícola que coexiste armónicamente con el Cabildo Indígena Zenú.
+              </p>
+              <p className="text-sm text-makeba-black/50 leading-relaxed font-sans font-light mb-6">
+                Organizados democráticamente a través de su Asamblea General y representados por su Junta Directiva, su historia reciente se ha forjado en la férrea defensa de su propiedad colectiva frente a la voraz expansión de la Zona Industrial de Mamonal.
               </p>
               <p className="text-sm text-makeba-black/50 leading-relaxed font-sans font-light mb-16">
-                Su historia es de resistencia, memoria y liderazgo femenino. Una historia que se ha forjado frente al avance del corredor industrial de Mamonal, protegiendo el tejido social y preservando la identidad cultural.
+                Lejos de ser un asentamiento pasivo, el Consejo Comunitario "Miriam Makeba" es un ejemplo vivo de arraigo. Han basado su sustento histórico en la agricultura de pancoger y mantienen una relación inquebrantable con sus fuentes de agua y la preservación de su ecosistema natural.
               </p>
             </FadeIn>
 

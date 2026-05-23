@@ -30,7 +30,20 @@ export function Cooperacion() {
             </h2>
           </FadeIn>
           
-          <FadeIn direction="up" delay={0.2} className="max-w-sm">
+          <FadeIn direction="up" delay={0.2} className="max-w-sm flex flex-col gap-8">
+            {/* Foto card del logo */}
+            <div className="flex items-center gap-5 bg-white/50 backdrop-blur-sm p-4 rounded-2xl border border-makeba-black/5 shadow-sm">
+              <img 
+                src="/assets/logo.jpeg" 
+                alt="Logo Miriam Makeba" 
+                className="w-16 h-16 rounded-full object-cover shadow-inner"
+              />
+              <div>
+                <p className="font-serif text-sm font-bold text-makeba-black leading-tight">Consejo Comunitario</p>
+                <p className="font-sans text-[10px] uppercase tracking-widest text-makeba-black/50 mt-1">Miriam Makeba</p>
+              </div>
+            </div>
+
             <p className="text-sm font-light font-sans text-makeba-black/70 leading-relaxed">
               Tejemos redes con organizaciones locales, nacionales e internacionales alrededor de la inclusión social, la cultura afrodescendiente y la justicia étnica. La solidaridad es nuestra estrategia comunitaria.
             </p>

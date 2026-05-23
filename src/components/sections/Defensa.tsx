@@ -90,9 +90,12 @@ export function Defensa() {
 
           <div className="w-full lg:w-7/12">
             <FadeIn direction="up" delay={0.3}>
-              <h4 className="font-serif text-3xl mb-6">Amparo Institucional</h4>
+              <h4 className="font-serif text-3xl mb-6">Liderazgo y Amparo Institucional</h4>
+              <p className="font-sans font-light text-makeba-cream/60 leading-relaxed mb-6 max-w-xl">
+                Bajo el firme liderazgo de su Representante Legal, <strong>Jairo Restrepo Mena</strong>, la comunidad ha llevado a cabo una incansable lucha jurídica, política y de defensa territorial frente a las autoridades locales y nacionales.
+              </p>
               <p className="font-sans font-light text-makeba-cream/60 leading-relaxed mb-10 max-w-xl">
-                En 2024, la Corte Constitucional de Colombia falló a favor del Consejo Comunitario, protegiendo los derechos fundamentales a la participación comunitaria, diversidad étnica, debido proceso y consulta previa.
+                Este esfuerzo sostenido culminó en un hito histórico: en 2024, la Corte Constitucional de Colombia falló a favor del Consejo Comunitario mediante la emblemática <strong>Sentencia T-237</strong>, amparando sus derechos inalienables frente a las presiones del corredor industrial.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
