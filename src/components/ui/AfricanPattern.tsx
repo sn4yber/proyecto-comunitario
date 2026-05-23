@@ -27,7 +27,7 @@ export function AfricanPattern({
   const cy = 500;
   
   // Create arrays for zigzag and triangle calculations
-  const renderZigZagRing = (radius: number, color: string, points: number = 30) => {
+  const renderZigZagRing = (radius: number, color?: string, points: number = 30) => {
     let d = "";
     const angleStep = (Math.PI * 2) / points;
     for (let i = 0; i <= points; i++) {
@@ -41,7 +41,7 @@ export function AfricanPattern({
     return <path d={d} fill="none" stroke={color} strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" />;
   };
 
-  const renderDottedRing = (radius: number, color: string, dots: number = 40) => {
+  const renderDottedRing = (radius: number, color?: string, dots: number = 40) => {
     return (
       <circle 
         cx={cx} 
@@ -56,7 +56,7 @@ export function AfricanPattern({
     );
   };
 
-  const renderDashedRing = (radius: number, color: string) => {
+  const renderDashedRing = (radius: number, color?: string) => {
     return (
       <circle 
         cx={cx} 
