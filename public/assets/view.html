@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Viewer</title>
+    <style>
+        body { margin: 0; padding: 20px; background: #eee; }
+        .container { position: relative; display: inline-block; }
+        img { max-width: 1000px; border: 1px solid #ccc; }
+        /* A grid to help the subagent estimate coordinates */
+        .grid {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: 
+                linear-gradient(to right, rgba(255,0,0,0.5) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255,0,0,0.5) 1px, transparent 1px);
+            background-size: 10% 10%;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="pattern-circle.png" id="img" />
+        <div class="grid"></div>
+    </div>
+    <script>
+        const img = document.getElementById('img');
+        img.onload = () => {
+            console.log("Image loaded: " + img.width + "x" + img.height);
+            // Add coordinate labels
+            for(let i=0; i<10; i++) {
+                for(let j=0; j<10; j++) {
+                    let label = document.createElement('div');
+                    label.style.position = 'absolute';
+                    label.style.left = (i*10) + '%';
+                    label.style.top = (j*10) + '%';
+                    label.style.fontSize = '10px';
+                    label.style.color = 'blue';
+                    label.innerText = i*10 + ',' + j*10;
+                    document.querySelector('.container').appendChild(label);
+                }
+            }
+        };
+    </script>
+</body>
+</html>

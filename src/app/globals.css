@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme {
+  --color-makeba-green: #1b6b38;
+  --color-makeba-yellow: #e8b400;
+  --color-makeba-red: #be2a24;
+  --color-makeba-blue: #1a4e7a;
+  --color-makeba-black: #0d0c09;
+  --color-makeba-cream: #f7f4ec;
+  --color-makeba-light: #f0ece0;
+  --color-makeba-orange: #e65c00;
+
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-makeba-cream text-makeba-black antialiased font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+
+  ::selection {
+    @apply bg-makeba-yellow text-makeba-black;
+  }
+}
+
+@layer utilities {
+  /* Separador tipo guión editorial */
+  .label-overline {
+    @apply text-[10px] font-bold tracking-[0.25em] uppercase font-sans;
+  }
+
+  /* Cinematic image hover */
+  .img-cinematic {
+    @apply w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105;
+  }
+
+  /* Línea decorativa lateral */
+  .accent-line-left {
+    @apply border-l-4 pl-6;
+  }
+
+  /* Fondo con textura muy sutil */
+  .bg-textured {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d0c09' fill-opacity='0.015'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+
+/* ===================== NAVBAR ===================== */
+.navbar {
+  position: fixed;
+  top: 16px; /* empieza justo debajo del borde tribal */
+  left: 16px;
+  right: 16px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 56px;
+  background: rgba(247, 244, 236, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(13, 12, 9, 0.08);
+}
+
+.navbar-logo {
+  font-family: var(--font-playfair);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d0c09;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.navbar-logo span {
+  display: block;
+  font-size: 0.6rem;
+  font-family: var(--font-inter);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #1b6b38;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  font-family: var(--font-inter);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(13, 12, 9, 0.55);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+  color: #1b6b38;
+}
+
+.navbar-cta {
+  background: #1b6b38;
+  color: #f7f4ec !important;
+  padding: 0.5rem 1.25rem;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  transition: background 0.2s !important;
+}
+
+.navbar-cta:hover {
+  background: #0d0c09;
+  color: #f7f4ec !important;
+}
